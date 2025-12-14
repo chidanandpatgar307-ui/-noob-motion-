@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Chidu | Video Editor</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial, Helvetica, sans-serif;
+  scroll-behavior:smooth;
+}
+
+body{
+  background:#000;
+  color:#fff;
+}
+
+/* ---------------- TOP NAV ---------------- */
+
+header{
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  background:#000;
+  padding:20px 8%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  z-index:1000;
+  border-bottom:1px solid #222;
+}
+
+header h2{
+  font-size:22px;
+  letter-spacing:2px;
+}
+
+nav a{
+  margin-left:25px;
+  color:#fff;
+  text-decoration:none;
+  font-weight:600;
+}
+
+nav a:hover{opacity:0.7}
+
+/* ---------------- SECTIONS ---------------- */
+
+section{
+  padding:120px 8%;
+}
+
+/* ---------------- HERO ---------------- */
+
+.hero{
+  min-height:100vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+}
+
+.hero h1{
+  font-size:80px;
+  font-weight:900;
+}
+
+.hero p{
+  margin-top:20px;
+  font-size:20px;
+  max-width:600px;
+  line-height:1.6;
+}
+
+.hero .btn{
+  margin-top:30px;
+  display:inline-block;
+  padding:15px 35px;
+  background:#fff;
+  color:#000;
+  text-decoration:none;
+  font-weight:700;
+  width:max-content;
+}
+
+/* ---------------- SERVICES ---------------- */
+
+.services{
+  background:#ddd;
+  color:#000;
+}
+
+.services h2{
+  font-size:60px;
+  margin-bottom:50px;
+}
+
+.service-item{
+  margin-bottom:40px;
+  font-size:20px;
+}
+
+/* ---------------- PROJECTS ---------------- */
+
+.projects h2{
+  font-size:60px;
+  margin-bottom:50px;
+  text-align:center;
+}
+
+.video-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit, minmax(260px, 1fr));
+  gap:25px;
+}
+
+.video-grid video{
+  width:100%;
+  border-radius:12px;
+  background:#111;
+}
+
+/* ---------------- ABOUT ---------------- */
+
+.about h2{
+  font-size:60px;
+  margin-bottom:40px;
+  text-align:center;
+}
+
+.about p{
+  max-width:700px;
+  margin:auto;
+  text-align:center;
+  font-size:20px;
+  line-height:1.6;
+}
+
+/* ---------------- CONTACT ---------------- */
+
+.contact{
+  text-align:center;
+}
+
+.contact h2{
+  font-size:60px;
+  margin-bottom:30px;
+}
+
+.contact a{
+  display:block;
+  margin-top:15px;
+  color:#fff;
+  text-decoration:none;
+  font-size:18px;
+}
+
+/* ---------------- MOBILE ---------------- */
+
+@media(max-width:768px){
+  .hero h1{font-size:45px}
+  .services h2,
+  .projects h2,
+  .about h2,
+  .contact h2{font-size:40px}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h2>CHIDU</h2>
+  <nav>
+    <a href="#hero">Home</a>
+    <a href="#services">Service</a>
+    <a href="#projects">Project</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero" id="hero">
+  <h1>HI, I’M CHIDU</h1>
+  <p>Passionate video editor crafting stories through motion.</p>
+  <a href="#projects" class="btn">View My Work</a>
+</section>
+
+<section class="services" id="services">
+  <h2>SERVICE</h2>
+  <div class="service-item">
+    <h3>1. YouTube Video Editing</h3>
+    <p>Editing YouTube content for watch-time, retention, and clean storytelling.</p>
+  </div>
+  <div class="service-item">
+    <h3>2. Motion Graphics & Animated Titles</h3>
+    <p>Lower thirds, titles, transitions, and animated elements.</p>
+  </div>
+  <div class="service-item">
+    <h3>3. Reels & Shorts Editing</h3>
+    <p>Fast, engaging edits for Instagram Reels and YouTube Shorts.</p>
+  </div>
+</section>
+
+<section class="projects" id="projects">
+  <h2>PROJECTS</h2>
+ </section>
+ <div class="video-grid">
+
+  <video controls><source src="animation2.mp4" type="video/mp4"></video>
+  <video controls><source src="barchart.mp4" type="video/mp4"></video>
+  <video controls><source src="Comp 1_5.mp4" type="video/mp4"></video>
+  <video controls><source src="Comp1.mp4" type="video/mp4"></video>
+  <video controls><source src="graphchart.mp4" type="video/mp4"></video>
+  <video controls><source src="main.mp4" type="video/mp4"></video>
+  <video controls><source src="matchcut.mp4" type="video/mp4"></video>
+  <video controls><source src="new animation.mp4" type="video/mp4"></video>
+  <video controls><source src="news content-.mp4" type="video/mp4"></video>
+  <video controls><source src="piechart.mp4" type="video/mp4">
+  <video controls><source src="ui animation.mp4" type="video/mp4"></video>
+</video>
+<video controls><source src="Comp 1.mp4" type="video/mp4">
+</video>
+ <video controls><source src="short video.mp4" type="video/mp4"></video>
+</div>
+<section class="about" id="about">
+  <h2>ABOUT ME</h2>
+<p>
+I’m a self-taught video editor from India, focused on documentaries, motion graphics, and social media content. I turn raw footage into meaningful and engaging visual stories.
+</p>
+</section>
+
+ <section class="contact" id="contact">
+  <h2>LET’S WORK TOGETHER</h2>
+
+  <a href="mailto:chidanandpatgar271@gmail.com">
+    Email: chidanandpatgar271@gmail.com
+  </a>
+
+  <a href="https://wa.me/917019063010" target="_blank">
+    WhatsApp: +91 70190 63010
+  </a>
+
+  <a href="https://www.instagram.com/YOUR_INSTAGRAM_USERNAME" target="_blank">
+    Instagram: @YOUR_INSTAGRAM_USERNAME
+  </a>
+</section>
+
+</body>
+</html>
